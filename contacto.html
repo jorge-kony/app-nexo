@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAFY NEXO | Refacciones y Soluciones para Transporte Público y Privado/contacto</title>
+  <link rel="icon" href="LOGO.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="HAFY-NEXO.png" alt="Hafy Nexo Logo" class="h-12 w-auto">
+    </a>
+
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-red-600 transition">Inicio</a>
+      <a href="#PROMOCIONES" class="hover:text-red-600 transition">Pomociones</a>
+      <a href="#NOSOTROS" class="hover:text-red-600 transition">Nosotros</a>
+      <a href="#FAQ" class="hover:text-red-600 transition">FAQ</a>
+      <a href="contacto.html" class="text-red-600 font-semibold">Contacto</a>
+    </nav>
+
+      <!-- Menú inferior fijo -->
+  <nav class="xl:hidden md:hidden fixed bottom-0 left-0 w-full bg-white border-t shadow-lg flex justify-around items-center h-16 z-50">
+    <a href="index.html" class="nav-link text-red-600 flex flex-col items-center text-sm font-medium" onclick="navigate('index.html', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75L12 4.5l9 5.25v8.25a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18V9.75z" />
+      </svg>
+      Inicio
+    </a>
+    <a href="#contacto" class="nav-link flex flex-col items-center text-sm font-medium text-gray-500" onclick="navigate('contacto', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0V6m0 6v6m12-6h.01M4 12h.01" />
+      </svg>
+      Contacto
+    </a>
+  </nav>
+
+  <style>
+    .hidden-section { display: none; }
+    .fade-enter {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+  </style>
+
+</header>
+
+  <!-- Hero contacto -->
+<section id="contacto" class="py-14   h-[500px] bg-[url('./minerva2.png')] bg-cover bg-center bg-no-repeat dark:bg-white-900"">
+   <div class="absolute h-[500px] inset-0 bg-black/40"></div> 
+      <div class="mt-14 relative py-14 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <h1 class="py-3 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">¿No encontraste lo que buscabas?</h1>
+        <p class=" mr-16  ml-16 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 font-semibold">No te preocupes , nuestro equipo está listo para ayudarte. Contáctanos y encontraremos la solución perfecta para ti.</p>
+      </div>
+</section>
+
+  <!-- Contacto principal -->
+  <section class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+    <!-- Formulario -->
+    <div class="bg-white shadow-lg rounded-2xl p-8 transition hover:shadow-xl">
+      <h3 class="text-2xl font-bold text-red-600 mb-6">Envíanos un mensaje</h3>
+      <form action="https://formsubmit.co/33a357862374ea60bd658683f85e3bf5 " method="POST"  class="space-y-4">
+       
+          <label class="block mb-1 font-medium">Nombre</label>
+          <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+        
+       
+          <label class="block mb-1 font-medium">Correo</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+      
+        
+          <label class="block mb-1 font-medium">Mensaje</label>
+          <textarea rows="5"  name="comments" equired class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+       
+        <button type="submit" value="Enviar" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition">Enviar</button>
+
+        <input type="hidden" name="_next" value="https://hafy-nexo.netlify.app/">
+      </form>
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="space-y-8">
+      <div class=" rounded-lg overflow-hidden shadow-md">
+      <div class="mr-12 ml-12 py-12 justify-center">
+        <h3 class="text-2xl font-bold text-red-600 mb-4">Datos de contacto</h3>
+        <p class="mb-2"><strong>Teléfono:</strong> +52 33-2618-9795</p>
+        <p class="mb-2"><strong>Email:</strong> hafy.nexo@gmail.com</p>
+        
+      </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="w-full md:h-min md:py-3 sm-h-[660px] mb-1 rounded-lg overflow-hidden shadow-md">
+        <p class="mr-12 ml-12  justify-center">
+ <br>Algunos de nuestros productos son
+ de importación y están disponibles
+ únicamente bajo pedido, debido a
+ su naturaleza especializada o
+ disponibilidad limitada. Si no
+ encuentras en nuestro catalogo la
+ refacción que necesitas, no te
+ preocupes: estamos aquí para
+ ayudarte. Puedes comunicarte con
+ nosotros a través de nuestro correo
+ electrónico o vía WhatsApp. Si nos
+ proporcionas el número de BIN
+ (número de identificación del
+ vehículo) de la unidad que requiere
+ la pieza, nuestro equipo te enviará
+ en breve una cotización precisa y
+ personalizada.
+ Queremos asegurarnos de que encuentres
+ justo lo que necesitas, con la
+ atención y el respaldo que
+ mereces.</p><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-black text-white py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="mb-4">© 2025 HAFY NEXO. Todos los derechos reservados.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="index.html">Inicio</a>
+        <a href="#modal" id="openModal" class=" hover:text-gray-300">
+        Política de Privacidad
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-xl max-w-3xl w-auto mr-6 ml-6 p-10 relative">
+      
+      <!-- Botón cerrar -->
+      <button id="closeModal" class="absolute top-3 right-5 text-gray-600 hover:text-red-500 text-xl font-bold">
+        ✕
+      </button>
+
+      <h2 class="text-2xl font-bold text-center mb-4">Política de Privacidad</h2>
+      <div class="h-64 overflow-y-auto text-gray-700 pr-2">
+         <section id="responsable">
+      
+    </section>
+
+    <section id="datos">
+      <h2>1) Datos personales que recabamos:</h2>
+      <p>Para brindarte nuestros servicios de venta de refacciones y varios productos para autobuses y tractocamiones, podremos solicitar:</p>
+      <ul>
+        <li>-Número de teléfono</li>
+        <li>-Correo electrónico</li>
+        <li>-Constancia de Situación Fiscal (CSF), solo si requieres factura</li>
+        <li>-Domicilio para envío (opcional; si lo prefieres, puedes recoger en la sucursal de la paquetería correspondiente)</li>
+      </ul>
+      <p>La información sensible (p. ej. datos fiscales o de domicilio) solo se compartirá si el cliente está de acuerdo pero bajo ninguna sircunstancia esta sera compartida, toda informacion de nuestros clientes es privada.</p><br>
+    </section>
+
+    <section id="finalidades">
+      <h2>2) Finalidades del tratamiento:</h2>
+      <ul>
+        <li>Atender cotizaciones, pedidos y solicitudes de información.</li>
+        <li>Gestionar la compra, facturación (si aplica) y envío de productos.</li>
+        <li>Mantener comunicación por los medios oficiales para dar seguimiento a tu solicitud.</li>
+      </ul>
+      <p>No utilizamos tus datos con fines distintos a los aquí descritos sin tu consentimiento.</p><br>
+    </section>
+
+    <section id="medios">
+      <h2>3) Medios de comunicación oficiales</h2>
+      <p>Nuestros únicos medios oficiales son:</p>
+      <ul>
+        <li>-Correo electrónico</li>
+        <li>-WhatsApp o llamada telefónica al número indicado en esta página</li>
+      </ul>
+      <p>La información sensible debe compartirse únicamente a través de estos canales oficiales ,en caso de compartir informacion sencible por canales no oficiales, estos no tendran relacion alguna con la empresa y no nos hacemos responsables del uso indevido que les puedan dar , le recomendamos siempre estar atento a nuestra pagina y revisar los medios de contacto oficiales para que evite ser victima de fraude.</p><br>
+    </section>
+
+    <section id="transferencias">
+      <h2>4) Transferencia de datos</h2>
+      <p>No compartimos ni vendemos tus datos personales a terceros. Si en el futuro fuese necesario compartir datos para realizar analisis con terceros para publicidad y marketing o con proveedores (p. ej., paqueterías o facturación), lo notificaremos mediante un mensaje por nuestros canales oficiales o actualización de esta Política antes de hacerlo, de igual manera se les notificara.</p><br>
+    </section>
+
+    <section id="seguridad">
+      <h2>5) Medidas de seguridad</h2>
+      <p>Aplicamos medidas administrativas y técnicas para proteger tu información contra acceso, uso o divulgación no autorizada. El acceso a los datos está restringido al personal que los necesita para las finalidades señaladas.</p><br>
+    </section>
+
+    <section id="retencion">
+      <h2>6) Plazo de conservación</h2>
+      <p>Conservamos tus datos únicamente durante el tiempo necesario para cumplir con las finalidades indicadas y obligaciones legales (por ejemplo, comprobación fiscal). Posteriormente, se eliminarán o anonimizarán de forma segura.</p><br>
+    </section>
+
+    <section id="derechos">
+      <h2>7) Derechos ARCO y contacto</h2>
+      <p>Como titular de datos personales, puedes ejercer tus derechos de <strong>Acceso</strong>, <strong>Rectificación</strong>, <strong>Cancelación</strong> y <strong>Oposición</strong> (ARCO), así como revocar tu consentimiento.</p>
+      <p>Para ejercerlos, envíanos un mensaje a  hafy.nexo@gmail.com</a> indicando: nombre completo, medio de contacto, derecho que deseas ejercer y una descripción breve de tu solicitud. También puedes escribirnos por WhatsApp al +52 33 2618 9795 </a>.</p><br>
+      
+    </section>
+
+    <section id="cookies">
+      <h2>8) Cookies y tecnologías similares</h2>
+      <p>Este sitio web es una landing page informativa sin registro de usuarios. <strong>No utilizamos cookies ni tecnologías similares</strong> para identificarte, rastrearte o perfilarte.</p><br>
+    </section>
+
+    <section id="cambios">
+      <h2>9) Cambios a este aviso</h2>
+      <p>Podremos actualizar esta Política de Privacidad en cualquier momento. Publicaremos los cambios en esta misma página indicando la fecha de última actualización. Si llegamos a realizar transferencias de datos a terceros, lo comunicaremos previamente mediante la actualización correspondiente.</p>
+    </section>
+
+    
+
+      <!-- Botón Aceptar -->
+      <div class="mt-6 text-center">
+        <button id="acceptModal" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const acceptModal = document.getElementById("acceptModal");
+    const modal = document.getElementById("modal");
+
+    openModal.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.remove("hidden");
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    acceptModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Cerrar modal al hacer clic fuera del cuadro
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  </script>
+
+
+  <!-- Script menú -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    });
+
+
+
+
+    function navigate(sectionId, el) {
+      // Ocultar todas las secciones
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.add('hidden-section');
+      });
+
+      // Mostrar la sección seleccionada con animación
+      const section = document.getElementById(sectionId);
+      section.classList.remove('hidden-section', 'fade-enter', 'fade-enter-active');
+      section.classList.add('fade-enter');
+      setTimeout(() => {
+        section.classList.add('fade-enter-active');
+      }, 20);
+
+      // Actualizar el menú activo
+      document.querySelectorAll('.nav-link').forEach(a => {
+        a.classList.remove('text-red-600');
+        a.classList.add('text-gray-500');
+      });
+      el.classList.add('text-red-600');
+      el.classList.remove('text-gray-500');
+    }  
+    
+  </script>
+
+</body>
+</html>

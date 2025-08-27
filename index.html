@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAFY NEXO | Refacciones y Soluciones para Transporte Público y Privado</title>
+  <link rel="icon" href="LOGO.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Navbar -->
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="HAFY-NEXO.png" alt="Hafy Nexo Logo" class="h-12 w-auto">
+    </a>
+  <nav>
+    <a class="bg-red-700 px-4 py-2 rounded-full text-white font-medium xl:hidden md:hidden" href="contacto.html">Contacto</a>
+  </nav>
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-red-600 transition">Inicio</a>
+      <a href="#PROMOCIONES" class="hover:text-red-600 transition">Pomociones</a>
+      <a href="#NOSOTROS" class="hover:text-red-600 transition">Nosotros</a>
+      <a href="#FAQ" class="hover:text-red-600 transition">FAQ</a>
+      <a href="contacto.html" class="text-red-600 font-semibold">Contacto</a>
+    </nav>
+
+  
+  <!-- Menú inferior fijo -->
+  <nav class=" xl:hidden md:hidden fixed bottom-0 left-0 w-full bg-white border-t shadow-lg flex justify-around items-center h-16 z-50">
+    <a href="#INICIO" class="nav-link text-red-600 flex flex-col items-center text-sm font-medium" onclick="navigate('INICIO', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h- w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75L12 4.5l9 5.25v8.25a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18V9.75z" />
+      </svg>
+      Inicio
+    </a>
+    <a href="#NOSOTROS" class="nav-link flex flex-col items-center text-sm font-medium text-gray-500" onclick="navigate('NOSOTROS', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A11.955 11.955 0 0112 15c2.486 0 4.779.758 6.879 2.046M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      Nosotros
+    </a>
+    <a href="#PROMOCIONES" class="nav-link flex flex-col items-center text-sm font-medium text-gray-500" onclick="navigate('PROMOCIONES', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 11h14l-1.405 9.74A2 2 0 0115.61 22H8.39a2 2 0 01-1.985-1.26L5 11z" />
+      </svg>
+      Promoción
+    </a>
+    <a href="#FAQ" class="nav-link flex flex-col items-center text-sm font-medium text-gray-500" onclick="navigate('FAQ', this)">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0V6m0 6v6m12-6h.01M4 12h.01" />
+      </svg>
+      FAQ
+    </a>
+    
+  </nav>
+
+  <style>
+    .hidden-section { display: none; }
+    .fade-enter {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+  </style>
+
+</header>
+
+
+<!-- Hero -->
+<!-- Hero -->
+<section id="INICIO" class="relative h-[750px] bg-[url('./camion45.jpg')] bg-cover bg-center bg-no-repeat dark:bg-white-900">
+  <!-- Overlay oscuro opcional para contraste -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Contenido -->
+  <div class="relative grid max-w-screen-xl px-10 py-20 mx-auto lg:gap-8 xl:gap-12 lg:py-32 lg:grid-cols-12">
+    <div class="xl:mt-10 mt-16 ml-5 md:mt-10 md:ml-10 place-self-center lg:col-span-7">
+      <h1 class="text-4xl mb-8 font-bold md:text-6xl xl:text-6xl text-white">
+        Refacciones y Soluciones para Transporte Público y Privados
+      </h1>
+      <p class="max-w-2xl mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-2xl">
+       HAFY NEXO ofrece refacciones nacionales e importadas, garantizando calidad, rapidez en envíos y atención confiable para su empresa.
+      </p>
+      <a href="#PROMOCIONES"
+         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 bg-red-700 ">
+        Ver Promociones
+      </a>
+      <a href="https://wa.me/523326189795?text=%E2%9C%A8%20Hola%2C%20buen%20d%C3%ADa.%0A%0AMe%20encantar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios%20%F0%9F%9B%A0%F0%9F%93%A6.%0A%0A%F0%9F%93%8C%20%C2%BFPodr%C3%ADan%20compartirme%20detalles%20adicionales%20y%20opciones%20disponibles%3F%0A%0AQuedo%20atento%20a%20su%20amable%20respuesta%20%F0%9F%99%8F%F0%9F%92%AC.%20%C2%A1Muchas%20gracias%20de%20antemano!%20%F0%9F%8C%9F%E2%9C%85""
+         class="inline-flex items-center justify-center px-5 py-3 mt-3 text-base font-medium text-center text-white border border-gray-300 rounded-lg hover:bg-red-700 hover:text-white focus:ring-4 focus:ring-gray-100">
+        Contáctanos
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Benefits 
+<section class="bg-gray-50 py-4">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 ">
+      <div class="p-10 bg-gray-50  rounded-t-lg md:rounded-l-lg shadow hover:bg-red-700 hover:text-white transition">
+        <h2 class="font-bold text-4xl md:text-2xl">Refacciones de Calidad</h2>
+        <p>Garantizamos productos confiables y duraderos.</p>
+      </div>
+      <div class="p-10 bg-gray-50 shadow hover:bg-red-700 hover:text-white transition">
+        <h2 class="font-bold text-4xl md:text-2xl">Envíos Rápidos</h2>
+        <p>Entregas en 24 horas a nivel nacional<br>(Aplica terminos y condiciones).</p>
+      </div>
+      <div class="p-10 bg-gray-50  rounded-b-lg md:rounded-r-lg shadow hover:bg-red-700 hover:text-white transition">
+        <h2 class="font-bold text-4xl md:text-2xl">Productos Importados</h2>
+        <p>Marcas nacionales e internacionales en menos de 11 días  (Aplica terminos y condiciones).</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Beneficios adicionales -->
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+    <div class="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition">
+      <h4 class="text-red-600 font-bold mb-2">Refacciones de Calidad</h4>
+      <p class="text-gray-700">Garantizamos productos confiables y duraderos.</p>
+    </div>
+    <div class="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition">
+      <h4 class="text-red-600 font-bold mb-2">Envíos Rápidos</h4>
+      <p class="text-gray-700">Entregas en 24 horas a nivel nacional<br>(Aplica terminos y condiciones).</p>
+    </div>
+    <div class="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition">
+      <h4 class="text-red-600 font-bold mb-2">Productos Importados</h4>
+      <p class="text-gray-700">Marcas nacionales e internacionales en menos de 11 días  (Aplica terminos y condiciones).</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Apply Cases -->
+<section id="NOSOTROS" class=" bg-gradient-to-l from-gray-900 to-black">
+    <div class="mr-9 ml-16 gap-16 items-center py-2 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-white sm:text-lg dark:text-gray-400">
+            <h2 class="mt-10 py-12 xl:mt-3 xl:py-8 md:mt-5 md:py-8 text-5xl tracking-tight font-bold  dark:text-white">Nosotros</h2>
+            <p class="mb-4 text-white">Somos una empresa orgullosamente mexicana que nace con una mision clara :<br>brindar
+              soluciones confiables y de calidad al sector del transporte publico y privado en todo el pais
+              . A lo largo del tiempo nos hemos consolidado como un refrente en la venta de tractopartes
+              importadas y nacionales  gracias al compromiso, la constancia y la confianza de nuestros clientes.
+            </p>
+            <p class="text-white">Cada cliente que confia en nosotros es parte de esta historia de crecimiento y compromiso. En HAFY NEXO, mas que vender productos, brindamos soluciones para mantenerte siempre en marcha. </p>
+        </div>
+        <div class="mt-16 mb-10">
+            <img class="w-full rounded-lg" src="camioneta.jpg" alt="office content 1">
+            
+    </div>
+</section>
+  <!-- Features -->
+<!-- Carrusel Manual Nuestras Marcas -->
+<section class="shadow-xl py-2 overflow-hidden relative">
+  <div class="max-w-5xl mx-auto px-4 text-center text-white">
+    <h2 class="md:text-3xl text-3xl  text-red-600 font-extrabold mb-3 mt-2">Nuestras Marcas</h2>
+
+    <!-- Contenedor del carrusel -->
+    <div class="overflow-x-auto flex gap-6 md:gap-8 py-4 scrollbar-hide">
+      <!-- Marca 1 -->
+      <div class="flex-shrink-0 bg-black p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="volvo.png" alt="Volvo">
+      </div>
+      <!-- Marca 2 -->
+      <div class="flex-shrink-0 bg-yellow-400 p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="cat.png" alt="Cat">
+      </div>
+      <!-- Marca 3 -->
+      <div class="flex-shrink-0 bg-white p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="mercedez.png" alt="Mercedes">
+      </div>
+      <!-- Marca 4 -->
+      <div class="flex-shrink-0 bg-white p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="ankai.png" alt="Ankai">
+      </div>
+
+      <div class="flex-shrink-0 bg-white p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="volsk.jpeg" alt="Ankai">
+      </div>
+
+      <!-- Marca 5 -->
+      <div class="flex-shrink-0 bg-white p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="dina.png" alt="Volvo">
+      </div>
+      <!-- Marca 6 -->
+      <div class="flex-shrink-0 bg-black p-3 rounded-xl shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+        <img class="rounded-lg mx-auto" src="man.jpeg" alt="Volvo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Ocultar scrollbar en Webkit y Firefox */
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+
+
+<section class="bg-gradient-to-r from-gray-900 to-black py-16 bg-gray-50">
+  <div class="mr-9 ml-16 max-w-7xl mx-auto px-4 lg:grid lg:grid-cols-2 gap-16 items-center">
+    <div class="mt-8">
+      <img class="w-full rounded-lg" src="camionrojo.jpg" alt="Camión rojo con refacciones HAFY NEXO" loading="lazy">
+    </div>
+    <div class="font-light text-white sm:text-lg">
+      <h2 class="text-4xl font-bold mt-8 mb-6">Trayectoria</h2>
+      <p>Con presencia en más de 6 estados de la República Mexicana entre ellos Queretaro, Chihuahua, Aguascalientes y Jalisco hemos construido relaciones sólidas con rutas y flotillas que mantienen a millones de personas en movimiento.</p>
+      <p class="mt-4">Sabemos lo importante que es contar con refacciones de calidad y a buen precio, por eso trabajamos los 365 días del año para ofrecer una experiencia de compra rápida, segura y efectiva.</p>
+    </div>
+  </div>
+</section>
+
+<section class="  bg-gradient-to-r from-blue-600 to-indigo-700 py-5 px-6 text-center text-white shadow-xl  mx-auto  ">
+  <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Descubre Nuestro<br>Catálogo</h2>
+  <p class="text-base md:text-lg mb-7 max-w-2xl mx-auto">
+    Conoce la amplia variedad de refacciones y productos que te ofrecemos para autobuses y tractocamiones. 
+    Solicita nuestro catálogo y encuentra justo lo que necesitas para mantener tus unidades siempre en movimiento. 
+  </p>
+  <a href="https://wa.me/523326189795?text=Hola%2C%20me%20gustar%C3%ADa%20que%20me%20manden%20el%20cat%C3%A1logo%20para%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos." 
+     target="_blank" 
+     class="relative inline-flex items-center bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300 ease-in-out animate-tintineo hover:animate-rebote">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 mr-2" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.9 11.9 0 0012 0C5.37 0 .02 5.37.02 12c0 2.11.55 4.17 1.6 5.98L0 24l6.25-1.63a11.98 11.98 0 005.73 1.46h.01c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 21.3c-1.89 0-3.74-.51-5.34-1.47l-.38-.22-3.71.96.99-3.62-.25-.37a9.3 9.3 0 01-1.48-5.07C1.83 6.4 6.4 1.83 12 1.83c2.48 0 4.81.97 6.55 2.7A9.23 9.23 0 0121.3 12c0 5.6-4.57 10.17-10.17 10.17z"/>
+    </svg>
+    Solicitar Catálogo
+  </a>
+</section>
+
+<style>
+@keyframes tintineo {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(0,255,0,0.7); }
+  50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(0,255,0,1); }
+}
+.animate-tintineo {
+  animation: tintineo 1.5s infinite;
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.hover\:animate-rebote:hover {
+  animation: rebote 0.4s ease;
+}
+</style>
+
+
+  <!-- Testimonials -->
+  <!-- SwiperJS CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<section class="max-w-7xl mx-auto px-4 py-16 text-center">
+  <h2 class="text-4xl font-bold mb-12 text-gray-800">Testimonios</h2>
+
+  <!-- Slider main container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="p-8 border rounded-2xl shadow-lg bg-white max-w-md mx-auto">
+          <div class="flex justify-center mb-4">
+            <img class="w-16 h-16 rounded-full border-2 border-red-500" src="desconosido.svg" alt="Usuario 1">
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            <span class="text-4xl text-red-500 font-serif">“</span>
+            Excelente servicio, lo recomiendo sin dudar.
+            <span class="text-4xl text-red-500 font-serif">”</span>
+          </p>
+          <div class="flex justify-center mb-2 text-yellow-400">⭐⭐⭐⭐☆</div>
+          <h4 class="font-bold text-lg text-gray-800">Ruta 640</h4>
+          <p class="text-sm text-gray-500">Empresa de transporte publico ZMG</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="p-8 border rounded-2xl shadow-lg bg-white max-w-md mx-auto">
+          <div class="flex justify-center mb-4">
+            <img class="w-16 h-16 rounded-full border-2 border-red-500" src="desconosido.svg" alt="Usuario 2">
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            <span class="text-4xl text-red-500 font-serif">“</span>
+              La mejor decisión que he tomado para mi empresa.
+            <span class="text-4xl text-red-500 font-serif">”</span>
+          </p>
+          <div class="flex justify-center mb-2 text-yellow-400">⭐⭐⭐⭐☆</div>
+          <h4 class="font-bold text-lg text-gray-800"> Carlos Ramírez</h4>
+          <p class="text-sm text-gray-500">Transportista</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="p-8 border rounded-2xl shadow-lg bg-white max-w-md mx-auto">
+          <div class="flex justify-center mb-4">
+            <img class="w-16 h-16 rounded-full border-2 border-red-500" src="desconosido.svg" alt="Usuario 3">
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            <span class="text-4xl text-red-500 font-serif">“</span>
+            Me ayudó mucho a mantener en buen estado las unidades de la empresa, buena realcion calidad precio
+            <span class="text-4xl text-red-500 font-serif">”</span>
+          </p>
+          <div class="flex justify-center mb-2 text-yellow-400">⭐⭐⭐⭐⭐</div>
+          <h4 class="font-bold text-lg text-gray-800">Ruta 633</h4>
+          <p class="text-sm text-gray-500">Empresa de transporte publico ZMG</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="p-8 border rounded-2xl shadow-lg bg-white max-w-md mx-auto">
+          <div class="flex justify-center mb-4">
+            <img class="w-16 h-16 rounded-full border-2 border-red-500" src="desconosido.svg" alt="Usuario 4">
+          </div>
+          <p class="text-gray-600 italic mb-4">
+            <span class="text-4xl text-red-500 font-serif">“</span>
+            Atención rápida y muy profesionales.
+            <span class="text-4xl text-red-500 font-serif">”</span>
+          </p>
+          <div class="flex justify-center mb-2 text-yellow-400">⭐⭐⭐⭐⭐</div>
+          <h4 class="font-bold text-lg text-gray-800">Laura Gómez</h4>
+          <p class="text-sm text-gray-500">Comerciante</p>
+        </div>
+      </div>
+    
+      
+    </div>
+
+    <!-- Paginación -->
+    <div class="swiper-pagination mt-6"></div>
+
+    <!-- Botones navegación -->
+    <div class="swiper-button-next text-red-500"></div>
+    <div class="swiper-button-prev text-red-500"></div>
+  </div>
+</section>
+
+<!-- SwiperJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      // móvil
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // tablet
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      // escritorio
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+</script>
+
+
+<!-- Carrusel Infinito con espacio uniforme -->
+<section class="bg-gradient-to-b from-gray-900 to-black py-3 overflow-hidden relative">
+  <div class="max-w-6xl mx-auto px-4 text-center text-white">
+    <h2 class="md:text-4xl text-3xl font-extrabold  mt-4 mb-2">Marcas de Importación</h2>
+    <h3 class="text-xl md:text-2xl mb-9 text-gray-300 font-medium">Principales marcas.</h3>
+
+    <!-- Contenedor de carrusel -->
+    <div class="overflow-hidden mb-3">
+      <div class="flex animate-scroll gap-6 md:gap-8">
+        <!-- Repetimos marcas dos veces para efecto infinito -->
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="ankai.png" alt="Ankai">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="foton.png" alt="Foton">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="king_long.png" alt="King Long">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="yutong.png" alt="Yutong">
+        </div>
+
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="ankai.png" alt="Ankai">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="foton.png" alt="Foton">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="king_long.png" alt="King Long">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="yutong.png" alt="Yutong">
+        </div>
+
+        <!-- Duplicamos para scroll infinito -->
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="ankai.png" alt="Ankai">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="foton.png" alt="Foton">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="king_long.png" alt="King Long">
+        </div>
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md transform transition duration-300 hover:scale-105 w-32 md:w-36">
+          <img class="rounded-md mx-auto" src="yutong.png" alt="Yutong">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Animación infinita */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+    gap: 1.5rem; /* asegure espacio uniforme entre todas las tarjetas */
+  }
+
+  /* Hover: pausamos animación */
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+</style>
+
+
+
+ <!-- Pricing Mejorado -->
+<section id="PROMOCIONES" class="relative h-full w-full px-4 py-16 text-center  ">
+  
+  <h2 class="text-4xl font-bold mb-12 mt-10 text-red-600 relative">PROMOCIONES</h2>
+  <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto " >
+
+    <!-- Tarjeta Electrovalvulas -->
+    <div class="p-8 rounded-2xl shadow-xl bg-gradient-to-r from-red-500 to-red-600 transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+      <h2 class="font-extrabold text-2xl mb-6 text-white flex items-center justify-center gap-2">
+        <span></span> Electrovalvulas
+      </h2>
+      <ul class="mb-6 text-white  items-center justify-center  space-y-3 text-left">
+        <li>-Rendimineto de calidad: Cada pieza lista para trabajar con precisión desde el primer día.</li>
+        <li>-Diseño resistente: Fabricadas para soportar uso continuo en condiciones exigentes de trabajo.</li>
+        <li>-Fiabilidad total: Confianza en cada uso, incluso en las jornadas más exigentes.</li>
+      </ul>
+      <a href="https://wa.me/523326189795?text=%E2%9C%A8%20Hola%2C%20buen%20d%C3%ADa.%0A%0AMe%20interesa%20obtener%20informaci%C3%B3n%20sobre%20la%20%F0%9F%9B%A0%EF%B8%8F%20promoci%C3%B3n%20de%20electrov%C3%A1lvulas%20que%20est%C3%A1n%20ofreciendo.%0A%0A%F0%9F%93%8C%20%C2%BFPodr%C3%ADan%20compartirme%20detalles%20sobre%3A%0A%0A%F0%9F%93%A6%20Disponibilidad%0A%0A%F0%9F%92%B2%20Precio%20de%20la%20promoci%C3%B3n%0A%0A%E2%8F%B1%EF%B8%8F%20Tiempos%20de%20entrega%3F%0A%0AQuedo%20atento%20a%20su%20amable%20respuesta.%0A%C2%A1Muchas%20gracias%20de%20antemano!%20%F0%9F%99%8C%E2%9C%85" 
+         target="_blank" class="block bg-white text-green-600 font-bold py-3 rounded-full  transition">WhatsApp</a>
+
+                               
+    </div>
+
+    <!-- Tarjeta Cables y Bujias -->
+    <div class="p-8 rounded-2xl shadow-xl bg-gradient-to-r from-blue-500 to-blue-600 transform transition duration-500 hover:-translate-y-3 hover:shadow-2xl">
+      <h2 class="font-extrabold text-2xl mb-6 text-white flex items-center justify-center gap-2">
+        <span></span> Cables y Bujias
+      </h2>
+      <ul class="mb-6 text-white  items-center justify-center  space-y-3 text-left">
+        <li>-Alta durabilidad: Diseñadas para un rendimiento confiable en camiones y tractocamiones.</li>
+        <li>-Ahorro garantizado: Optimiza el consumo y reduce costos de mantenimiento.</li>
+        <li>-Compatibilidad asegurada: Refacciones listas para tu motor a gas natural</li>
+      </ul>
+      <a href="https://wa.me/523326189795?text=%E2%9C%A8%20Hola%2C%20buen%20d%C3%ADa.%0A%0AMe%20interesa%20solicitar%20una%20%F0%9F%93%9D%20cotizaci%C3%B3n%20de%20cables%20y%20buj%C3%ADas%20para%20camiones%20a%20gas%20natural.%0A%0A%F0%9F%9A%9A%20%C2%BFPodr%C3%ADan%20compartirme%20informaci%C3%B3n%20sobre%3A%0A%0A%F0%9F%93%A6%20Disponibilidad%0A%0A%F0%9F%92%B2%20Precios%0A%0A%E2%8F%B1%EF%B8%8F%20Tiempos%20de%20entrega%3F%0A%0AQuedo%20atento%20a%20su%20amable%20respuesta.%0A%C2%A1Muchas%20gracias%20de%20antemano!%20%F0%9F%99%8C%E2%9C%85" 
+         target="_blank" class="block bg-white text-green-600 font-bold py-3 rounded-full  transition">WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+    
+  <!-- FAQ -->
+  <section id="FAQ" class="bg-gray-50 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Preguntas Frecuentes</h2>
+      <div class="space-y-4">
+        <details class="p-4 border rounded-lg">
+          <summary class="font-semibold cursor-pointer">¿Cómo puedo solicitar mi factura?</summary>
+          <p class="mt-2 text-gray-600">Para solicitar tu factura, envíanos tus datos fiscales completos (RFC, razón social, domicilio fiscal y correo electrónico) junto con el número de tu pedido. La factura debe pedirse dentro del mes en que se realizó la compra, conforme a lo establecido por el SAT. Una vez validada la información, recibirás tu CFDI en el correo electrónico proporcionado.</p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="font-semibold cursor-pointer">¿Qué pasa si la refacción que pedí no es la correcta?</summary>
+          <p class="mt-2 text-gray-600">En caso de que la refacción no corresponda a tu vehículo o aplicación, puedes ponerte en contacto con nosotros dentro de los primeros 5 días hábiles después de recibir tu pedido. Revisaremos tu caso y, si aplica, podrás realizar un cambio por otra pieza disponible. Es importante que la refacción esté en buen estado y sin señales de uso.</p>
+        </details>
+        <details class="p-4 border rounded-lg">
+          <summary class="font-semibold cursor-pointer">¿Realizan envíos a todo México?</summary>
+          <p class="mt-2 text-gray-600">Sí, realizamos envíos a toda la República Mexicana mediante paqueterías seguras. Los tiempos de entrega y costos pueden variar dependiendo de la ubicación y del tamaño del pedido. Una vez confirmada la compra, tu pedido estara en proceso de envio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8 mt-12  ">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="mb-4">© 2025 HAFY NEXO. Todos los derechos reservados.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="index.html">Inicio</a>
+         <a href="#modal" id="openModal" class=" hover:text-gray-300">
+        Política de Privacidad
+      </a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+   <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-xl max-w-3xl w-auto mr-6 ml-6 p-10 relative">
+      
+      <!-- Botón cerrar -->
+      <button id="closeModal" class="absolute top-3 right-5 text-gray-600 hover:text-red-500 text-xl font-bold">
+        ✕
+      </button>
+
+      <h2 class="text-2xl font-bold text-center mb-4">Política de Privacidad</h2>
+      <div class="h-64 overflow-y-auto text-gray-700 pr-2">
+         <section id="responsable">
+      
+    </section>
+
+    <section id="datos">
+      <h2>1) Datos personales que recabamos:</h2>
+      <p>Para brindarte nuestros servicios de venta de refacciones y varios productos para autobuses y tractocamiones, podremos solicitar:</p>
+      <ul>
+        <li>-Número de teléfono</li>
+        <li>-Correo electrónico</li>
+        <li>-Constancia de Situación Fiscal (CSF), solo si requieres factura</li>
+        <li>-Domicilio para envío (opcional; si lo prefieres, puedes recoger en la sucursal de la paquetería correspondiente)</li>
+      </ul>
+      <p>La información sensible (p. ej. datos fiscales o de domicilio) solo se compartirá si el cliente está de acuerdo pero bajo ninguna sircunstancia esta sera compartida, toda informacion de nuestros clientes es privada.</p><br>
+    </section>
+
+    <section id="finalidades">
+      <h2>2) Finalidades del tratamiento:</h2>
+      <ul>
+        <li>Atender cotizaciones, pedidos y solicitudes de información.</li>
+        <li>Gestionar la compra, facturación (si aplica) y envío de productos.</li>
+        <li>Mantener comunicación por los medios oficiales para dar seguimiento a tu solicitud.</li>
+      </ul>
+      <p>No utilizamos tus datos con fines distintos a los aquí descritos sin tu consentimiento.</p><br>
+    </section>
+
+    <section id="medios">
+      <h2>3) Medios de comunicación oficiales</h2>
+      <p>Nuestros únicos medios oficiales son:</p>
+      <ul>
+        <li>-Correo electrónico</li>
+        <li>-WhatsApp o llamada telefónica al número indicado en esta página</li>
+      </ul>
+      <p>La información sensible debe compartirse únicamente a través de estos canales oficiales ,en caso de compartir informacion sencible por canales no oficiales, estos no tendran relacion alguna con la empresa y no nos hacemos responsables del uso indevido que les puedan dar , le recomendamos siempre estar atento a nuestra pagina y revisar los medios de contacto oficiales para que evite ser victima de fraude.</p><br>
+    </section>
+
+    <section id="transferencias">
+      <h2>4) Transferencia de datos</h2>
+      <p>No compartimos ni vendemos tus datos personales a terceros. Si en el futuro fuese necesario compartir datos para realizar analisis con terceros para publicidad y marketing o con proveedores (p. ej., paqueterías o facturación), lo notificaremos mediante un mensaje por nuestros canales oficiales o actualización de esta Política antes de hacerlo, de igual manera se les notificara.</p><br>
+    </section>
+
+    <section id="seguridad">
+      <h2>5) Medidas de seguridad</h2>
+      <p>Aplicamos medidas administrativas y técnicas para proteger tu información contra acceso, uso o divulgación no autorizada. El acceso a los datos está restringido al personal que los necesita para las finalidades señaladas.</p><br>
+    </section>
+
+    <section id="retencion">
+      <h2>6) Plazo de conservación</h2>
+      <p>Conservamos tus datos únicamente durante el tiempo necesario para cumplir con las finalidades indicadas y obligaciones legales (por ejemplo, comprobación fiscal). Posteriormente, se eliminarán o anonimizarán de forma segura.</p><br>
+    </section>
+
+    <section id="derechos">
+      <h2>7) Derechos ARCO y contacto</h2>
+      <p>Como titular de datos personales, puedes ejercer tus derechos de <strong>Acceso</strong>, <strong>Rectificación</strong>, <strong>Cancelación</strong> y <strong>Oposición</strong> (ARCO), así como revocar tu consentimiento.</p>
+      <p>Para ejercerlos, envíanos un mensaje a  hafy.nexo@gmail.com</a> indicando: nombre completo, medio de contacto, derecho que deseas ejercer y una descripción breve de tu solicitud. También puedes escribirnos por WhatsApp al +52 33 2618 9795 </a>.</p><br>
+      
+    </section>
+
+    <section id="cookies">
+      <h2>8) Cookies y tecnologías similares</h2>
+      <p>Este sitio web es una landing page informativa sin registro de usuarios. <strong>No utilizamos cookies ni tecnologías similares</strong> para identificarte, rastrearte o perfilarte.</p><br>
+    </section>
+
+    <section id="cambios">
+      <h2>9) Cambios a este aviso</h2>
+      <p>Podremos actualizar esta Política de Privacidad en cualquier momento. Publicaremos los cambios en esta misma página indicando la fecha de última actualización. Si llegamos a realizar transferencias de datos a terceros, lo comunicaremos previamente mediante la actualización correspondiente.</p>
+    </section>
+
+    
+
+      <!-- Botón Aceptar -->
+      <div class="mt-6 text-center">
+        <button id="acceptModal" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const acceptModal = document.getElementById("acceptModal");
+    const modal = document.getElementById("modal");
+
+    openModal.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.remove("hidden");
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    acceptModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Cerrar modal al hacer clic fuera del cuadro
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  </script>
+
+
+  <!-- Script Menú -->
+    <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    });
+
+
+     const carousel = document.getElementById('carousel');
+
+  // Función para navegar con flechas
+  function scrollCarousel(direction) {
+    const scrollAmount = carousel.clientWidth / 2;
+    carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+
+  // Scroll automático
+  let scrollSpeed = 1; // velocidad
+  let isPaused = false;
+
+  function autoScroll() {
+    if (!isPaused) {
+      carousel.scrollLeft += scrollSpeed;
+      // reiniciar scroll para loop infinito
+      if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(autoScroll);
+  }
+  autoScroll();
+
+  // Pausar al pasar el mouse
+  carousel.addEventListener('mouseenter', () => isPaused = true);
+  carousel.addEventListener('mouseleave', () => isPaused = false);
+
+
+
+
+  function navigate(sectionId, el) {
+      // Ocultar todas las secciones
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.add('hidden-section');
+      });
+
+      // Mostrar la sección seleccionada con animación
+      const section = document.getElementById(sectionId);
+      section.classList.remove('hidden-section', 'fade-enter', 'fade-enter-active');
+      section.classList.add('fade-enter');
+      setTimeout(() => {
+        section.classList.add('fade-enter-active');
+      }, 20);
+
+      // Actualizar el menú activo
+      document.querySelectorAll('.nav-link').forEach(a => {
+        a.classList.remove('text-red-600');
+        a.classList.add('text-gray-500');
+      });
+      el.classList.add('text-red-600');
+      el.classList.remove('text-gray-500');
+    }
+
+    
+  </script>
+
+</body>
+</html>
